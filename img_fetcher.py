@@ -26,7 +26,7 @@ class Images():
         print(f"Status     : {self.status}")
 
 if __name__ == "__main__":
-    src = "https://salam.uinsgd.ac.id/dashboard/assets/logo_salam.png"
-    dst = f"./img/logo.png"
+    src = "https://source.com/source.png"
+    dst = "./img/source.png"
     image = Images(src, dst)
     image.run()
