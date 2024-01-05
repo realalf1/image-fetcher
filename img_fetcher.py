@@ -1,3 +1,5 @@
+import requests
+
 class Images():
     def __init__(self, source, destination):
         self.name = "Fetch Images with Python"
