@@ -13,17 +13,16 @@ class Images():
         if r.status_code == 200:
             with open(self.destination, "wb") as f:
                 f.write(r.content)
-                print("\nFetching image successfully")
+                print("Fetching image successfully\n")
             self.status = True
         
         else:
-            print(f"Failed to fetch {self.source}")
+            print(f"Failed to fetch {self.source}\n")
             
     def run(self):
+        self.fetch()
         print(f"Source     : {self.source}")
         print(f"Destination: {self.destination}")
-        print(f"Status     : {self.status}")
-        self.fetch()
         print(f"Status     : {self.status}")
 
 if __name__ == "__main__":
